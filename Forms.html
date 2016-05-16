@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <form>
+    First name:
+        <input id="fname" type="text" class=name/>
+        
+        <br /><br />
+
+    <div id="submit" style="background-color: red; width: 200px; text-align: center; cursor: pointer;">
+        submit
+    </div>
+</form>
+    
+    <form>
+    First name:
+        <input type="text" />
+        
+        <h2>Sports</h2>
+        <input type="checkbox" /> Surfing
+        <br />
+        <input type="checkbox" /> Football
+        <br />
+        <input type="checkbox" /> Rugby
+        
+        <br /><br />
+        
+        <h2>Gender</h2>
+        <input type="radio" name="gender"/> Male
+        <br />
+        <input type="radio" name="gender"/> Female
+        <br />
+        <input type="radio" name="gender"/> Other
+    </form>
+
+    <script>
+        
+       document.getElementByID('submit').addEventListener('click', function() {
+       var fname = document.getElementById('fname').value;
+       alert (fname);
+       
+       });
+        
+    </script>
+</body>
+</html>
